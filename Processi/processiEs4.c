@@ -6,8 +6,18 @@
 
 int cercaNumeri(int listaNumeri [], int numeroDaCercare)
 {
+    int numeroTrovato;
 
+    for(int i=0; i < 10; i++)
+    {
+        if(numeroDaCercare == i)
+        {
+            numeroTrovato = i;
+            i == 10;
+        } 
+    }
 
+    return numeroTrovato;
 }
 
 
@@ -22,14 +32,13 @@ int main(int argc, char *argv[])
         printf("Inserire il numero da cercare nell'array: \n");
         scanf("%d", &numeroDaCercare);
 
-
+        printf("Il numero è in posizone %d ",cercaNumeri(listaNumeri, numeroDaCercare));
 
         exit(2);
     }
     else
     {
         wait(&status);
-
     }
 
     return 0;
